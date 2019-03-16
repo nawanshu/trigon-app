@@ -1,0 +1,19 @@
+{
+  "name": "trigon",
+  "version": "1.0.0",
+  "description": "Scalable application to classify triangle based on their sides length",
+  "main": "trigon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nawanshu/trigon-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nawanshu/trigon-app/issues"
+  },
+  "homepage": "https://github.com/nawanshu/trigon-app#readme"
+}
