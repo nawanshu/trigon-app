@@ -4,7 +4,9 @@
   "description": "Scalable application to classify triangle based on their sides length",
   "main": "trigon.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,17 @@
   "bugs": {
     "url": "https://github.com/nawanshu/trigon-app/issues"
   },
-  "homepage": "https://github.com/nawanshu/trigon-app#readme"
+  "homepage": "https://github.com/nawanshu/trigon-app#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
 }
