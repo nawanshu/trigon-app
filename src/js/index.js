@@ -26,6 +26,7 @@ const getType = function() {
     let a = parseFloat(document.querySelector('.input__field__a').value);
     let b = parseFloat(document.querySelector('.input__field__b').value);
     let c = parseFloat(document.querySelector('.input__field__c').value);
+    
     if(shape.gatherSides([a, b, c])) {
         if(shape.validate()){
             console.log(shape.classify());
