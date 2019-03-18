@@ -41,3 +41,4 @@ Run **npm run build** to build the project. The build artifacts will be stored i
 ## Running unit tests
 
 Run **npm run test** to execute the unit tests via Mocha and Chai.
+**Note:** For UI show case, I have added tradeshift UI dialog in the code, that will break test case because we have to mock/spy "ts" object. Please remove UI dialog to run test cases successfully. 
