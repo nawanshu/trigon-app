@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My App</title>
+		<meta name="viewport" content="width=device-width"/>
+        <meta name="ts-app-title" content="Trigon"/>
+        <meta name="ts-app-color" content="ts-blue"/>
+        <link rel="ts-app-icon" href="./assets/logo.png"/>
+        <link rel="stylesheet" href="//d5wfroyti11sa.cloudfront.net/prod/client/ts-12.2.0.min.css"/>
+        <script src="//d5wfroyti11sa.cloudfront.net/prod/client/ts-12.2.0.min.js"></script>
+        
+	</head>
+	<body>
+		<div data-ts="App">
+			<div data-ts="Main">
+				<div data-ts="Content">
+                        <div data-ts="Board">
+                            <div data-ts="Panel">
+                                    <div class="note" data-ts="Note" data-ts.closeable="false">
+                                        <p class="note__text">
+                                            A program that will determine the type of a triangle. 
+                                            It should take the lengths of the triangle's three sides as input, and return whether the triangle is equilateral,isosceles or scalene.
+                                        </p>
+                                        <button id="basic-btn" type="button" data-ts="Button" class="ts-primary">Basics of Triangle</button>
+                                    </div>
+                            </div>
+                        </div>
+                        <div data-ts="Board">
+                            <div data-ts="Panel">
+                                <div data-ts="Board">
+                                    <div data-ts="Panel">
+                                        <form id="input" data-ts="Form">
+                                            <fieldset class="form__field">
+                                                <label>
+                                                    <span>Select Shape</span>
+                                                    <select id="shape__value">
+                                                        <option value="triangle" selected>Triangle</option>
+                                                        <option value="rectangle">Rectangle</option>
+                                                        <option value="circle">Circle</option>
+                                                        <option value="square">Square</option>
+                                                        <option value="rhombus">Rhombus</option>
+                                                        <option value="hexagon">Hexagon</option>
+                                                        <option value="pentagon">Pentagon</option>
+                                                    </select>
+                                                </label>
+                                            </fieldset>
+                                        </form>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+				</div>
+            </div>
+            <div id="modal"></div>
+        </div>
+        <script>
+            ts.ui.ready(function() {
+                ts.ui.get('#board', board => {
+                    board.title('My Board');
+                });
+            });
+        </script>
+	</body>
+</html>
